@@ -1,0 +1,40 @@
+dijest_finetuned_with_vgsl_new: ketos train -f binary -d cuda:0 -r 0.0001 -o dijest_finetuned_with_vgsl_new dataset.arrow --workers 4 -s "[1,120,0,1 Cr3,13,32 Do0.1,2 Mp2,2 Cr3,13,32 Do0.1,2 Mp2,2 Cr3,9,64 Do0.1,2 Mp2,2 Cr3,9,64 Do0.1,2 S1(1x0)1,3 Lbx200 Do0.1,2 Lbx200 Do.1,2 Lbx200 Do]]" --resize both -i sinai_Hebrew_Dijest.mlmodel 
+
+dijest_finetuned_with_vgsl_NFC_new: ketos train -f binary -d cuda:0 -r 0.0001 -o dijest_finetuned_with_vgsl_NFC_new dataset.arrow --workers 4 -s "[1,120,0,1 Cr3,13,32 Do0.1,2 Mp2,2 Cr3,13,32 Do0.1,2 Mp2,2 Cr3,9,64 Do0.1,2 Mp2,2 Cr3,9,64 Do0.1,2 S1(1x0)1,3 Lbx200 Do0.1,2 Lbx200 Do.1,2 Lbx200 Do]]" --resize both -i sinai_Hebrew_Dijest.mlmodel -u NFC 
+
+from_scratch_new (from_scratch_new_vgsl): ketos train -f binary -d cuda:0 -r 0.0001 -o from_scratch_new dataset.arrow --workers 4 -s "[1,120,0,1 Cr3,13,32 Do0.1,2 Mp2,2 Cr3,13,32 Do0.1,2 Mp2,2 Cr3,9,64 Do0.1,2 Mp2,2 Cr3,9,64 Do0.1,2 S1(1x0)1,3 Lbx200 Do0.1,2 Lbx200 Do.1,2 Lbx200 Do]]" 
+
+from_scratch_new_(1) (from_scratch_new_vgsl_NFC): ketos train -f binary -d cuda:0 -r 0.0001 -o from_scratch_new dataset.arrow --workers 4 -s "[1,120,0,1 Cr3,13,32 Do0.1,2 Mp2,2 Cr3,13,32 Do0.1,2 Mp2,2 Cr3,9,64 Do0.1,2 Mp2,2 Cr3,9,64 Do0.1,2 S1(1x0)1,3 Lbx200 Do0.1,2 Lbx200 Do.1,2 Lbx200 Do]]" -u NFC
+
+from_scratch_new_vgsl_NFD: ketos train -f binary -d cuda:0 -r 0.0001 -o from_scratch_new_vgsl_NFD dataset.arrow --workers 4 -s "[1,120,0,1 Cr3,13,32 Do0.1,2 Mp2,2 Cr3,13,32 Do0.1,2 Mp2,2 Cr3,9,64 Do0.1,2 Mp2,2 Cr3,9,64 Do0.1,2 S1(1x0)1,3 Lbx200 Do0.1,2 Lbx200 Do.1,2 Lbx200 Do]]" -u NFD
+
+dijest_finetuned_with_vgsl_NFD_new: ketos train -f binary -d cuda:0 -r 0.0001 -o dijest_finetuned_with_vgsl_NFD_new dataset.arrow --workers 4 -s "[1,120,0,1 Cr3,13,32 Do0.1,2 Mp2,2 Cr3,13,32 Do0.1,2 Mp2,2 Cr3,9,64 Do0.1,2 Mp2,2 Cr3,9,64 Do0.1,2 S1(1x0)1,3 Lbx200 Do0.1,2 Lbx200 Do.1,2 Lbx200 Do]]" --resize both -i sinai_Hebrew_Dijest.mlmodel -u NFD
+
+dijest_finetuned_with_vgsl_NFKD_new: ketos train -f binary -d cuda:0 -r 0.0001 -o dijest_finetuned_with_vgsl_NFKD_new dataset.arrow --workers 4 -s "[1,120,0,1 Cr3,13,32 Do0.1,2 Mp2,2 Cr3,13,32 Do0.1,2 Mp2,2 Cr3,9,64 Do0.1,2 Mp2,2 Cr3,9,64 Do0.1,2 S1(1x0)1,3 Lbx200 Do0.1,2 Lbx200 Do.1,2 Lbx200 Do]]" --resize both -i sinai_Hebrew_Dijest.mlmodel -u NFKD
+
+dijest_finetuned_with_vgsl_NFKC_new: ketos train -f binary -d cuda:0 -r 0.0001 -o dijest_finetuned_with_vgsl_NFKC_new dataset.arrow --workers 4 -s "[1,120,0,1 Cr3,13,32 Do0.1,2 Mp2,2 Cr3,13,32 Do0.1,2 Mp2,2 Cr3,9,64 Do0.1,2 Mp2,2 Cr3,9,64 Do0.1,2 S1(1x0)1,3 Lbx200 Do0.1,2 Lbx200 Do.1,2 Lbx200 Do]]" --resize both -i sinai_Hebrew_Dijest.mlmodel -u NFKC
+
+gnazim_finetuned_dijest_with_vgsl_NFKD_new: ketos train -f binary -d cuda:0 -r 0.0001 -o gnazim_finetuned_dijest_with_vgsl_NFKD_new dataset.arrow --workers 4 -s "[1,120,0,1 Cr3,13,32 Do0.1,2 Mp2,2 Cr3,13,32 Do0.1,2 Mp2,2 Cr3,9,64 Do0.1,2 Mp2,2 Cr3,9,64 Do0.1,2 S1(1x0)1,3 Lbx200 Do0.1,2 Lbx200 Do.1,2 Lbx200 Do]]" --resize both -i gnazim_finetuned_dijest_model_best.mlmodel -u NFKD
+
+BiblAI_01_finetuned_with_vgsl_NFD_new: ketos train -f binary -d cuda:0 -r 0.0001 -o BiblAI_01_finetuned_with_vgsl_NFD_new dataset.arrow --workers 4 -s "[1,120,0,1 Cr3,13,32 Do0.1,2 Mp2,2 Cr3,13,32 Do0.1,2 Mp2,2 Cr3,9,64 Do0.1,2 Mp2,2 Cr3,9,64 Do0.1,2 S1(1x0)1,3 Lbx200 Do0.1,2 Lbx200 Do.1,2 Lbx200 Do]]" --resize both -i BiblIA_01.mlmodel -u NFD
+
+gnazim_finetuned_dijest_with_vgsl_NFKC_new: ketos train -f binary -d cuda:0 -r 0.0001 -o gnazim_finetuned_dijest_with_vgsl_NFKC_new dataset.arrow --workers 4 -s "[1,120,0,1 Cr3,13,32 Do0.1,2 Mp2,2 Cr3,13,32 Do0.1,2 Mp2,2 Cr3,9,64 Do0.1,2 Mp2,2 Cr3,9,64 Do0.1,2 S1(1x0)1,3 Lbx200 Do0.1,2 Lbx200 Do.1,2 Lbx200 Do]]" --resize both -i gnazim_finetuned_dijest_model_best.mlmodel -u NFKC
+
+from_scratch_new_vgsl_NFKC: ketos train -f binary -d cuda:0 -r 0.0001 -o from_scratch_new_vgsl_NFKC dataset.arrow --workers 4 -s "[1,120,0,1 Cr3,13,32 Do0.1,2 Mp2,2 Cr3,13,32 Do0.1,2 Mp2,2 Cr3,9,64 Do0.1,2 Mp2,2 Cr3,9,64 Do0.1,2 S1(1x0)1,3 Lbx200 Do0.1,2 Lbx200 Do.1,2 Lbx200 Do]]" -u NFKC
+
+dijest_finetuned (no special parameters): ketos train -f binary -d cuda:0 -r 0.0001 -o dijest_finetuned dataset.arrow --workers 4 --resize both -i sinai_Hebrew_Dijest.mlmodel
+
+from_scratch_new (no special parameters): ketos train -f binary -d cuda:0 -r 0.0001 -o from_scratch_new dataset.arrow --workers 4
+
+from_scratch_new_vgsl_NFKD: ketos train -f binary -d cuda:0 -r 0.0001 -o from_scratch_new_vgsl_NFKD dataset.arrow --workers 4 -s "[1,120,0,1 Cr3,13,32 Do0.1,2 Mp2,2 Cr3,13,32 Do0.1,2 Mp2,2 Cr3,9,64 Do0.1,2 Mp2,2 Cr3,9,64 Do0.1,2 S1(1x0)1,3 Lbx200 Do0.1,2 Lbx200 Do.1,2 Lbx200 Do]]" -u NFKD
+
+yiddish_finetuned_with_vgsl_new: ketos train -f binary -d cuda:0 -r 0.0001 -o yiddish_finetuned_with_vgsl_new dataset.arrow -s "[1,120,0,1 Cr3,13,32 Do0.1,2 Mp2,2 Cr3,13,32 Do0.1,2 Mp2,2 Cr3,9,64 Do0.1,2 Mp2,2 Cr3,9,64 Do0.1,2 S1(1x0)1,3 Lbx200 Do0.1,2 Lbx200 Do.1,2 Lbx200 Do]]" --resize both -i yiddish_rec_big_25.mlmodel
+
+yiddish_finetuned_with_vgsl_new_NFKD: ketos train -f binary -d cuda:0 -r 0.0001 -o yiddish_finetuned_with_vgsl_new_NFKD dataset.arrow -s "[1,120,0,1 Cr3,13,32 Do0.1,2 Mp2,2 Cr3,13,32 Do0.1,2 Mp2,2 Cr3,9,64 Do0.1,2 Mp2,2 Cr3,9,64 Do0.1,2 S1(1x0)1,3 Lbx200 Do0.1,2 Lbx200 Do.1,2 Lbx200 Do]]" --resize both -i yiddish_rec_big_25.mlmodel -u NFKD
+
+gnazim_finetuned_dijest_with_vgsl_new: ketos train -f binary -d cuda:0 -r 0.0001 -o gnazim_finetuned_dijest_with_vgsl_NFKC_new dataset.arrow --workers 4 -s "[1,120,0,1 Cr3,13,32 Do0.1,2 Mp2,2 Cr3,13,32 Do0.1,2 Mp2,2 Cr3,9,64 Do0.1,2 Mp2,2 Cr3,9,64 Do0.1,2 S1(1x0)1,3 Lbx200 Do0.1,2 Lbx200 Do.1,2 Lbx200 Do]]" --resize both -i gnazim_finetuned_dijest_model_best.mlmodel
+
+
+
+
+
